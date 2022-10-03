@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Date And time</title>
+</head>
+<style>
+    .container{
+        font-size:  23px;
+        background-color: blanchedalmond;
+        border: 2px solid green;
+        border-radius: 10px;
+        padding: 34px;
+        margin: 4px;
+        text-align: center;
+    }
+    span{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>This turorial about date and Time</h1>
+        Current Time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date and time tutorial")
+        let now = new Date()
+        console.log(now)
+
+        let dt= new Date(0)
+        console.log(dt)
+
+        let newDate = new Date("2022-09-30")
+        console.log(newDate)
+
+        // let newDate1 = new Date(yesr, month, date, hours, minutes, seconds, millisecond)
+        let newDate1 = new Date(3020,4,6,9,3,2,34)
+        console.log(newDate1)
+
+        let yr = newDate1.getFullYear()
+        console.log("This year is ",yr)
+        let mo = newDate1.getMonth()
+        console.log("This month is ",mo)
+        let date = newDate1.getDate()
+        console.log("This date is ",date)
+        let hoour = newDate1.getDay()
+        console.log("This day is ",hoour)
+        
+        newDate1.setDate(5)
+        console.log(newDate1)
+        newDate1.setMinutes(29)
+        console.log(newDate1)
+        
+        curr = Date.now()
+        console.log(curr)
+
+        setInterval(updateTime, 1000)
+        function updateTime(){
+            time.innerHTML = new Date
+        }
+    </script>
+</body>
+</html>

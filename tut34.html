@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            background-color: blanchedalmond;
+            margin: 23px 12px;
+            padding: 23px 12px;
+            border: 2px solid red;
+
+            /* box-shadow: offset-x offset-y blur-radius spread-redius color*/
+            box-shadow: 10px 13px green;
+            box-shadow: -10px -13px 5px green ;
+            box-shadow: 10px 13px 5px 10px greenyellow;
+
+            box-shadow: inset 3px 5px blue;
+            box-shadow: 3px 5px green, 5px 7px blue;
+
+        }
+        .card h2{
+            text-shadow: 3px 4px 2px  yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is Python Course</h2>
+            <p>I have started Python course which does not mean that we will stop this course. We will continue this course to completion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum rerum alias voluptatibus iste dolorum natus corrupti temporibus porro, dolore expedita est velit odit aspernatur rem beatae placeat! Est adipisci nemo omnis eaque consectetur.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dicta numquam unde vitae nesciunt. Pariatur earum autem, quidem distinctio eos voluptate officia, ipsum ducimus maxime assumenda amet ipsa ad atque numquam, culpa animi nihil?</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam repellat, id commodi recusandae suscipit, quas tempore deleniti, beatae asperiores aperiam corporis voluptates! Fuga voluptates, ipsum architecto deserunt sint illum maiores rerum atque quae illo.</p>
+        </div>
+        <div class="card" id="card4">
+            <h2>Card4</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit blanditiis vitae, excepturi inventore ab minus quia molestias odio, officiis dolores provident eos quas et animi? Veritatis, fugit ut quisquam velit blanditiis cum incidunt eius.</p>
+        </div>
+    </div>
+</body>
+</html>

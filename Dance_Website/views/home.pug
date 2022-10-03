@@ -1,0 +1,45 @@
+extends base.pug
+
+block script 
+    script(src="/static/index.js")
+    //- script(src="/pets.js")  
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    
+    section#introSection 
+        div Welcome to Harry's Dance Academy
+        div.small Eat Sleep Dance Repeat
+    section#missionSection 
+        h2 Our Mission 
+        div.card
+            h3 Dance Perfection
+            div.cardBox
+                div.cardImg
+                    img(src="/static/img/img1.png", alt="")
+                div.cardContent
+                    p This is the best Dance Academy in this universe
+        div.card
+            h3 Dance the way you like
+            div.cardBox
+                div.cardImg
+                    img(src="/static/img/img2.png", alt="")
+                div.cardContent
+                    p This is the best Dance Academy in this universe
+        div.card
+            h3 Expert Teaching
+            div.cardBox
+                div.cardImg
+                    img(src="/static/img/img4.png", alt="")
+                div.cardContent
+                    p This is the best Dance Academy in this universe
+    section#sponcersSection 
+        h2 Our Sponsors
+        div#sponcers
+            img(src="/static/img/sponcer1.jpg", alt="" , class="spImg")
+            img(src="/static/img/sponcer2.jpg", alt="" , class="spImg")
+            img(src="/static/img/sponcer3.jpg", alt="" , class="spImg")
+            img(src="/static/img/sponcer4.jpg", alt="" , class="spImg")
