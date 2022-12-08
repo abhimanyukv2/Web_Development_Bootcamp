@@ -32,7 +32,7 @@ body::before{
     width: 100%;
     top: 0px;
     position: absolute;
-    background: url('/static/bg.png') no-repeat center center/cover;
+    background: url('bg.png');
 }
 .container{
     margin: 35px 0px;
